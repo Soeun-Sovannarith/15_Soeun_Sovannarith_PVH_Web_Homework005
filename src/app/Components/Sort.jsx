@@ -4,19 +4,6 @@ import React from 'react'
 import {ArrowUpAZ,ArrowDownAZ} from "lucide-react"
 
 export default function Bookmark({setSortOrder}) {
-
-     const [sort, setsort] = React.useState(true);
-    
-      function asc_sorted(){
-        // sort(items, (a, b))
-        alert("Items is sorted ascendingly");
-        
-      }
-    
-      function desc_sorted(){
-        alert("Item is sorted descendingly");
-        // sort(items, (a, b) => a.)
-      }
   return (
     <div className="flex items-center justify-between mb-8">
         <button className="bg-white text-black px-4 py-1 rounded-full text-sm font-bold flex items-center gap-1">

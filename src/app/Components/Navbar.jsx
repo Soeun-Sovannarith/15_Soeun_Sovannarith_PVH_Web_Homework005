@@ -1,15 +1,10 @@
 "use client";
 
 export default function Navbar({ searchBar }){
-
-
-   
     return (
     <>
 
-      <nav className="w-full bg-[#0f1216] flex items-center justify-between px-4 py-2
-      shadow-[0_4px_6px_rgba(0,0,0,0.5)]">
-      
+      <nav className="w-full bg-[#0f1216] flex items-center justify-between px-4 py-2shadow-[0_4px_6px_rgba(0,0,0,0.5)]">
       
       <div className="flex items-center gap-3 h-15">
         <img

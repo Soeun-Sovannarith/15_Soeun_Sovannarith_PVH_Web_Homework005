@@ -4,11 +4,14 @@ import React from "react";
 import { Bookmark } from 'lucide-react';
 import ViewButton from './ViewButton';
 
-export default function Card({ item }) {
+import { useBookmark } from "./BookmarkContext";
 
-  const [isBookmarked, setIsBookmarked] = React.useState(false);
+export default function Card({ item }) {
+  const { toggleBookmark, isBookmarked } = useBookmark();
+  const bookmarked = isBookmarked(item.id);
+
   function handleBookmark() {
-    setIsBookmarked(!isBookmarked);
+    toggleBookmark(item);
   }
   return (
     <div className="flex items-center gap-4 bg-[#0b0d12]/50 p-4 rounded-2xl border border-gray-800/20 hover:border-gray-700/50 transition-all group">
@@ -26,7 +29,7 @@ export default function Card({ item }) {
       <div className="grow">
         <div className="flex items-center gap-2 mb-1">
           <h3 className="text-white font-semibold text-lg">{item.item_name}</h3>
-          <button className="cursor-pointer" onClick={handleBookmark}>{isBookmarked ? <Bookmark size={20} fill="yellow" /> : <Bookmark size={20} fill="white" />}</button>
+          <button className="cursor-pointer" onClick={handleBookmark}>{bookmarked ? <Bookmark size={20} fill="yellow" /> : <Bookmark size={20} fill="white" />}</button>
           <span className="text-gray-400 text-sm">${item.item_price}</span>
           {item.saved}
         </div>

@@ -13,8 +13,7 @@ export default function Sidebar() {
         {menuItems.map((item) => (
           <div
             key={item}
-            className="w-full text-left px-5 py-2 rounded-xl bg-[#161a21] text-white text-sm 
-                     border border-white/5"
+            className="w-full text-left px-5 py-2 rounded-xl bg-[#161a21] text-white text-sm border border-white/5"
           >
             {item}
           </div>

@@ -9,8 +9,6 @@ export default function ViewButton({ item }) {
     setOpen(!open);
   }
 
-
-
   return (
     <>
   {open && (

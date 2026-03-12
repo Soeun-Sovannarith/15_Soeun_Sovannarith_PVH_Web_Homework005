@@ -1,11 +1,8 @@
 "use client"
 import React from 'react'
 import {ArrowUpAZ,ArrowDownAZ} from "lucide-react"
-import { useBookmark } from "./BookmarkContext";
 
 export default function Bookmark({setSortOrder, setShowBookmarked, showBookmarked, setSearchQuery}) {
-  const { bookmarks } = useBookmark();
-  
   const handleBack = () => {
     setShowBookmarked(false);
     if (setSearchQuery) setSearchQuery("");

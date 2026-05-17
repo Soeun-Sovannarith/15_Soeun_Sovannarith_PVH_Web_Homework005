@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Deploy
         run: |
-          cd ~/15_Soeun_Sovannarith_PVH_Web_Homework005/my_app
+          cd /home/rith/15_Soeun_Sovannarith_PVH_Web_Homework005
           git pull origin main
           docker compose up -d --build
           docker image prune -f

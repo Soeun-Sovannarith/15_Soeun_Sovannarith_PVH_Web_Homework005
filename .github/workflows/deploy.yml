@@ -7,18 +7,12 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
-      - name: Deploy to VM via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.VM_HOST }}
-          username: ${{ secrets.VM_USER }}
-          key: ${{ secrets.VM_SSH_PRIVATE_KEY }}
-          port: 22
-          script: |
-            cd ~/home/rith/15_Soeun_Sovannarith_PVH_Web_Homework005
-            git pull origin main
-            docker compose up -d --build
-            docker image prune -f
+      - name: Deploy
+        run: |
+          cd ~/15_Soeun_Sovannarith_PVH_Web_Homework005/my_app
+          git pull origin main
+          docker compose up -d --build
+          docker image prune -f

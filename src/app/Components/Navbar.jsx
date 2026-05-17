@@ -10,7 +10,7 @@ export default function Navbar({ searchBar }) {
             alt="avatar"
             className="w-15 h-15 rounded-full object-cover border-2 border-white"
           />
-          <span className="text-white font-semibold text-2xl">Dashboard</span>
+          <span className="text-white font-semibold text-2xl">Sovannarith Dashboard</span>
         </div>
 
         {searchBar}

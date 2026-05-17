@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Deploy
         run: |
-          cd /Users/sovannarith/Documents/Desktop__/15_SOEUN_SOVANNARITH_PVH_Web_Homework005
+          cd /Users/sovannarith/Documents/Desktop__/15_SOEUN_SOVANNARITH_PVH_Web_Homework005/my_app
           git pull origin main
           docker compose down
           docker compose up -d --build --force-recreate

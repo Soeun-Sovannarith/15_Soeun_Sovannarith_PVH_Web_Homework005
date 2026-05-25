@@ -1,5 +1,5 @@
 export default function Sidebar() {
-  const menuItems = ["Overview", "Items", "Orders", "Customers", "Settings"];
+  const menuItems = ["test", "Items", "Orders", "Customers", "Settings"];
 
   return (
     <aside className="w-60 bg-[#0b0d12] p-4 rounded-3xl m-4 h-fit min-h-[500px] border border-gray-800/20 shadow-2xl">

@@ -1,7 +1,7 @@
 export const items = [
   {
     id: 1,
-    item_name: "Aula wireless Mouse",
+    item_name: "MeyMey Amm Men ten Mouse",
     item_description:
       "Ergonomic wireless mouse with adjustable DPI and silent clicks. i bought it from taobao",
     item_price: 19.99,

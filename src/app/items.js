@@ -1,7 +1,11 @@
 export const items = [
   {
     id: 1,
+<<<<<<< HEAD
     item_name: "Wireless Mouse",
+=======
+    item_name: "Hey What's up man Mouse",
+>>>>>>> a1a851fbd0859cb6fb100a1d1e4508d86e98f04a
     item_description:
       "Ergonomic wireless mouse with adjustable DPI and silent clicks.",
     item_price: 19.99,

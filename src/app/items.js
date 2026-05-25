@@ -1,9 +1,9 @@
 export const items = [
   {
     id: 1,
-    item_name: "MeyMey Amm Men ten Mouse",
+    item_name: "Wireless Mouse",
     item_description:
-      "Ergonomic wireless mouse with adjustable DPI and silent clicks. i bought it from taobao",
+      "Ergonomic wireless mouse with adjustable DPI and silent clicks.",
     item_price: 19.99,
     image: "https://images.unsplash.com/photo-1527814050087-3793815479db",
     saved: false,
@@ -59,7 +59,7 @@ export const items = [
     item_description:
       "Full HD webcam with auto-focus, built-in mic, and low-light support.",
     item_price: 39.99,
-    image: "https://images.unsplash.com/photo-1587614382346-4ec70e388b28",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNZSM68b5-lWmEQQTiiznZekGW8io7qtRoHQ&s",
     saved: false,
   },
 ];

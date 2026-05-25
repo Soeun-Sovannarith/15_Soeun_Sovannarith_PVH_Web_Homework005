@@ -37,6 +37,11 @@ export default function Card({ item }) {
         <p className="text-gray-500 text-sm line-clamp-2 max-w-2xl">
           {item.item_description}
         </p>
+        {item.date_added && (
+          <p className="text-gray-600 text-xs mt-1">
+            Added: {new Date(item.date_added + "T00:00:00").toLocaleDateString()}
+          </p>
+        )}
       </div>
       
 

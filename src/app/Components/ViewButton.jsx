@@ -28,6 +28,9 @@ export default function ViewButton({ item }) {
             <div className="">Name: {item?.item_name}</div>
             <div className="">Description: {item?.item_description}</div>
             <div className="">Price: ${item?.item_price}</div>
+            {item?.date_added && (
+              <div className="">Added: {new Date(item.date_added + "T00:00:00").toLocaleDateString()}</div>
+            )}
           </div>
         </dialog>
       )}

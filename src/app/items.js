@@ -7,6 +7,7 @@ export const items = [
     item_price: 19.99,
     image: "https://images.unsplash.com/photo-1527814050087-3793815479db",
     saved: false,
+    date_added: "2025-01-15",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const items = [
     item_price: 59.5,
     image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
     saved: false,
+    date_added: "2025-02-20",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const items = [
     item_price: 34.0,
     image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
     saved: false,
+    date_added: "2025-03-10",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const items = [
     item_price: 129.99,
     image: "https://images.unsplash.com/photo-1605773527852-c546a8584ea3",
     saved: false,
+    date_added: "2025-04-05",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ export const items = [
     item_price: 24.75,
     image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
     saved: false,
+    date_added: "2025-05-18",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ export const items = [
     item_price: 39.99,
     image: "https://images.unsplash.com/photo-1587614382346-4ec70e388b28",
     saved: true,
+    date_added: "2025-06-22",
   },
   {
     id: 7,
@@ -61,5 +67,6 @@ export const items = [
     item_price: 39.99,
     image: "https://images.unsplash.com/photo-1587614382346-4ec70e388b28",
     saved: false,
+    date_added: "2025-07-30",
   },
 ];

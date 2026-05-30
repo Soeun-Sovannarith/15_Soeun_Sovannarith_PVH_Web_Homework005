@@ -2,7 +2,7 @@ export default function Sidebar() {
   const menuItems = ["Morede", "Items", "Orders", "Customers", "Settings"];
 
   return (
-    <aside className="w-60 bg-[#0b0d12] p-4 rounded-3xl m-4 h-fit min-h-[500px] border border-gray-800/20 shadow-2xl">
+    <aside className="w-60 bg-[#0b0d12] p-3 sm:p-4 rounded-3xl m-2 sm:m-4 h-fit min-h-[500px] border border-gray-800/20 shadow-2xl">
       <div className="mb-4 ml-2">
         <span className="text-gray-500 text-[10px] font-bold tracking-[0.2em] uppercase">
           Menu

@@ -39,7 +39,7 @@ export default function SecondarySection({
         showBookmarked={showBookmarked}
         setSearchQuery={setSearchQuery}
       />
-      <div className="flex flex-col gap-4 max-w-5xl mx-auto">
+      <div className="flex flex-col gap-2 sm:gap-4 max-w-5xl mx-auto">
         {filteredItems.length > 0 ? (
           filteredItems.map((item) => <Card key={item.id} item={item} />)
         ) : (

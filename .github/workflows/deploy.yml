@@ -1,0 +1,30 @@
+name: Deploy to Mac Mini
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted  # your Mac Mini runner
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          docker build -t my-nextjs-app:latest .
+
+      - name: Stop old containers
+        run: |
+          docker compose down || true
+
+      - name: Start new containers
+        run: |
+          docker compose up -d
+
+      - name: Clean up old images
+        run: |
+          docker image prune -f

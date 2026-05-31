@@ -21,7 +21,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker-compose build
+          docker build -t my-nextjs-app:latest .
 
       - name: Start new containers
         run: |

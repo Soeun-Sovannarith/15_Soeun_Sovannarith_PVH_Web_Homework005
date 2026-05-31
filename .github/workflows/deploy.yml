@@ -7,19 +7,21 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted  # your Mac Mini runner
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Stop and remove old containers
+        run: |
+          docker stop nextjs nginx || true
+          docker rm nextjs nginx || true
+          docker-compose down || true
+
       - name: Build Docker image
         run: |
-          docker build -t my-nextjs-app:latest .
-
-      - name: Stop old containers
-        run: |
-          docker-compose down || true
+          docker-compose build
 
       - name: Start new containers
         run: |

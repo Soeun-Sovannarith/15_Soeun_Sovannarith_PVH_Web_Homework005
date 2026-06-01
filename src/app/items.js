@@ -3,7 +3,7 @@ export const items = [
     id: 1,
     item_name: "Apple iPad Pro",
     item_description:
-      "Ergonomic wireless mouse with adjustable DPI and silent clicks.",
+      "12.9-inch iPad Pro with M1 chip, Liquid Retina XDR display, and 5G support.",
     item_price: 19.99,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE0VTn8OVV8s3GH3Z-zarNlrvpTNtNugi4MQ&s",
     saved: false,

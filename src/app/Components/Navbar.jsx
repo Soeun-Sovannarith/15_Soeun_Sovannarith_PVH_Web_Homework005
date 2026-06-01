@@ -10,7 +10,7 @@ export default function Navbar({ searchBar }) {
             alt="avatar"
             className="w-12 h-12 sm:w-15 sm:h-15 rounded-full object-cover border-2 border-white"
           />
-          <span className="text-white font-semibold text-base sm:text-2xl">Demo Success</span>
+          <span className="text-white font-semibold text-base sm:text-2xl">Group 2 CI/CD Demo</span>
         </div>
 
         {searchBar}

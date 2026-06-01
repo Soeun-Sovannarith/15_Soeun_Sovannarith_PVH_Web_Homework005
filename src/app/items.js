@@ -1,11 +1,11 @@
 export const items = [
   {
     id: 1,
-    item_name: "Testing product",
+    item_name: "Apple iPad Pro",
     item_description:
       "Ergonomic wireless mouse with adjustable DPI and silent clicks.",
     item_price: 19.99,
-    image: "https://images.unsplash.com/photo-1527814050087-3793815479db",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE0VTn8OVV8s3GH3Z-zarNlrvpTNtNugi4MQ&s",
     saved: false,
   },
   {

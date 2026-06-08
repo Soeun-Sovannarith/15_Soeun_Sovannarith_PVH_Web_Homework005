@@ -1,7 +1,6 @@
-version: '3.8'
-
 services:
   nextjs:
+    build: .
     image: my-nextjs-app:latest
     container_name: nextjs
     restart: unless-stopped
